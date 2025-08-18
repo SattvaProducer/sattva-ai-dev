@@ -3,10 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
-# C extensions
-*.so
+# C extensions - Расширения
 
-# Distribution / packaging
+# Distribution / packaging - Распространение / упаковка
 .Python
 build/
 develop-eggs/
@@ -135,12 +134,6 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
-.envrc
-.venv
-env/
-venv/
-ENV/
 env.bak/
 venv.bak/
 
@@ -205,8 +198,9 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
-### 🔐 SATTVA AI DEV SECURE ZONE [НАЧАЛО] ###
-# ================================================
+
+### 🔐 SATTVA AI DEV SECURE ZONE ###
+
 # СЕКРЕТНЫЕ АЛГОРИТМЫ И ПАТЕНТЫ
 /private/
 algorithms/
@@ -216,9 +210,14 @@ secret_*.py
 *.patent
 rosptent_application.pdf
 
-# ЗАЩИТА КОНФИГУРАЦИИ И КЛЮЧЕЙ (расширенная)
+# ЗАЩИТА КОНФИГУРАЦИИ И КЛЮЧЕЙ 
 .env
 .env.*
+.envrc
+.venv
+env/
+venv/
+ENV/
 config.ini
 credentials/
 keys/
@@ -241,14 +240,19 @@ dist/private/
 security_alerts.log
 license_checker/
 access_control/
-audit_trail/
+/private/              # Защита папки с алгоритмами
+*.pyd                  # Скомпилированные модули Windows
+__pycache__/private/   # Дополнительная защита кеша
+audit_trail/           # Для логирования доступа
 
-# КОПИИ РЕЗЕРВОВ И АРХИВЫ
+# ДАННЫЕ ПОЛЬЗОВАТЕЛЕЙ И РАСЧЁТОВ
 user_data/
 *.csv
 *.xlsx
-*.parquet
 calculations_database.db
+*.parquet
+
+# РЕЗЕРВНЫЕ КОПИИ
 *.bak
 *.tmp
 *.backup
@@ -257,16 +261,12 @@ temp_backups/
 
 # СЛУЖЕБНЫЕ ФАЙЛЫ IDE
 *.code-workspace
-.vscode/settings.json
 .vscode/launch.json
+.vscode/settings.json
 .idea/workspace.xml
 .idea/dataSources/
 
-# ДАННЫЕ ПОЛЬЗОВАТЕЛЕЙ И РАСЧЁТОВ
-user_data/
-*.csv
-*.xlsx
-calculations_database.db
+
 ### 🔐 SATTVA AI DEV SECURE ZONE [КОНЕЦ] ###
 
 # ВСЕГДА ИГНОРИРОВАТЬ
