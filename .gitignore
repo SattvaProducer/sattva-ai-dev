@@ -1,12 +1,12 @@
-# Byte-compiled / optimized / DLL files
+# Byte-compiled / optimized / DLL files   → Байт-код и оптимизированные файлы
 __pycache__/
 *.py[codz]
 *$py.class
 
-# C extensions - Расширения
+# C extensions   → Расширения
 *.so
 
-# Distribution / packaging - Распространение / упаковка
+# Distribution / packaging   → Распространение / упаковка
 .Python
 build/
 develop-eggs/
@@ -26,17 +26,17 @@ share/python-wheels/
 *.egg
 MANIFEST
 
-# PyInstaller
+# PyInstaller   → Инсталлятор 
 #  Usually these files are written by a python script from a template
 #  before PyInstaller builds the exe, so as to inject date/other infos into it.
 *.manifest
 *.spec
 
-# Installer logs
+# Installer logs Логи установщика
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports
+# Unit test / coverage reports   → Отчёты тестов и покрытия
 htmlcov/
 .tox/
 .nox/
@@ -51,7 +51,7 @@ coverage.xml
 .pytest_cache/
 cover/
 
-# Translations
+# Translations → Переводы
 *.mo
 *.pot
 
@@ -216,13 +216,13 @@ keys/                  # Каталог ключей
 *.cert                 # SSL-сертификаты
 *.jks                  # Java KeyStore
 .env                   # Основные переменные окружения
-.env.*                 # Все вариации переменных
 .envrc
-env/
-ENV/
-env.bak/
 .venv
+env/
 venv/
+ENV/
+.env.*                 # Все вариации переменных
+env.bak/
 venv.bak/
 *.keystore
 api_keys.json
@@ -245,8 +245,13 @@ audit_trail/           # Журнал аудита
 __pycache__/private/   # Дополнительная защита кеша
 audit_trail/           # Для логирования доступа
 
-# 📊 ДАННЫЕ ПОЛЬЗОВАТЕЛЕЙ И РАСЧЁТОВ
+# 👤 ДАННЫЕ ПОЛЬЗОВАТЕЛЕЙ (GDPR/152-ФЗ)
+user_profiles/         # Профили пользователей
+*.personal_data        # Файлы с персональными данными
 user_data/             # Пользовательские данные
+auth_tokens.db         # Токены авторизации
+
+# 📊 ДАННЫЕ ПОЛЬЗОВАТЕЛЕЙ И РАСЧЁТОВ
 *.csv                  # Экспорт в CSV
 *.xlsx                 # Excel-файлы
 *.parquet              # Формат Parquet
@@ -258,6 +263,8 @@ calculations_database.db  # База расчётов
 *.backup               # Бэкапы
 archive/               # Архивы
 temp_backups/          # Временные резервы
+migrations/            # Миграции базы данных
+*.db-journal           # Журналы БД
 
 # ⚙️ СЛУЖЕБНЫЕ ФАЙЛЫ РАЗРАБОТКИ
 *.code-workspace       # Рабочее пространство VSCode
