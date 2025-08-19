@@ -1,9 +1,7 @@
 {
     "recommendations": [
-        "colourafredi.vscode-deepseek",
         "continue.continue",
         "github.copilot",
-        "github.copilot-chat",
-        "wassimdev.wassimdev-vscode-deepseek"
+        "github.copilot-chat"
     ]
 }
