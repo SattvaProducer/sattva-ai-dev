@@ -1,281 +1,187 @@
-# Byte-compiled / optimized / DLL files   → Байт-код и оптимизированные файлы
+# ===============================
+# 🐍 PYTHON
+# ===============================
 __pycache__/
-*.py[codz]
+*.py[cod]
 *$py.class
 
-# C extensions   → Расширения
-*.so
-
-# Distribution / packaging   → Распространение / упаковка
-.Python
+# Дистрибутивы / упаковка
 build/
-develop-eggs/
 dist/
-downloads/
-eggs/
+*.egg-info/
 .eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
 wheels/
 share/python-wheels/
-*.egg-info/
-.installed.cfg
 *.egg
 MANIFEST
 
-# PyInstaller   → Инсталлятор 
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
+# PyInstaller
 *.spec
+*.manifest
 
-# Installer logs   → Логи установщика
+# Логи установщика
 pip-log.txt
 pip-delete-this-directory.txt
 
-# Unit test / coverage reports   → Отчёты тестов и покрытия кода
-htmlcov/                # HTML-отчёты о покрытии
-.tox/                   # Виртуальные окружения для tox
-.nox/                   # Виртуальные окружения для nox
-.coverage               # Файлы coverage.py
-.coverage.*
-.cache                  # Кеш тестов
-nosetests.xml           # Отчёты nose
-coverage.xml            # XML-отчёты coverage
+# Тесты и покрытие
+htmlcov/
+.tox/
+.nox/
+.coverage*
+.cache
+.pytest_cache/
+nosetests.xml
+coverage.xml
 *.cover
 *.py.cover
-.hypothesis/            # Кеш hypothesis (property-based тесты)
-.pytest_cache/          # Кеш pytest
-cover/                  # Альтернативные отчёты покрытия
+.hypothesis/
+cover/
 
-# Translations → Переводы
-*.mo
-*.pot
+# Jupyter / IPython
+.ipynb_checkpoints
+profile_default/
+ipython_config.py
 
-# Django stuff:      → Файлы Django-фреймворка
-*.log                  # Логи приложения
-local_settings.py      # Локальные настройки (секреты!)
-db.sqlite3             # База данных SQLite
-db.sqlite3-journal     # Журнал транзакций SQLite
-
-# Flask stuff:      → Файлы Flask-фреймворка
-instance/              # Экземпляр приложения (конфиги)
-.webassets-cache       # Кеш веб-ассетов
-
-# Scrapy stuff:      → Файлы Scrapy
-.scrapy                # Кеш парсера Scrapy
-
-# Sphinx documentation      → Документация Sphinx
-docs/_build/           # Сгенерированные файлы документации
-
-# PyBuilder      → Система сборки PyBuilder
-.pybuilder/            # Конфигурация
-target/                # Артефакты сборки
-
-# Jupyter Notebook      → Заметки Jupyter
-.ipynb_checkpoints     # Автосохранения блокнотов
-
-# IPython      → Настройки IPython
-profile_default/       # Профиль по умолчанию
-ipython_config.py      # Конфигурация
-
-# pyenv      → Управление версиями Python
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version      # Файл версии (раскомментировать если нужно)
-
-# pipenv      → Менеджер зависимостей
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock          # Точные версии зависимостей
-
-# UV
-#   Similar to Pipfile.lock, it is generally recommended to include uv.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#uv.lock
-
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
-#poetry.toml
-
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#   pdm recommends including project-wide configuration in pdm.toml, but excluding .pdm-python.
-#   https://pdm-project.org/en/latest/usage/project/#working-with-version-control
-#pdm.lock
-#pdm.toml
-.pdm-python
-.pdm-build/
-
-# pixi
-#   Similar to Pipfile.lock, it is generally recommended to include pixi.lock in version control.
-#pixi.lock
-#   Pixi creates a virtual environment in the .pixi directory, just like venv module creates one
-#   in the .venv directory. It is recommended not to include this directory in version control.
-.pixi
-
-# PEP 582; used by e.g.   → Пакеты PEP 582 github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/        # Локальные пакеты
-
-# Celery stuff      → Распределённая очередь задач
-celerybeat-schedule      # Расписания Celery
-celerybeat.pid         # PID-файл
-
-# SageMath parsed files      → Файлы SageMath
-*.sage.py
-
-# Spyder project settings      → Настройки Spyder IDE
-.spyderproject
-.spyproject
-
-# Rope project settings       → Настройки Rope IDE
-.ropeproject
-
-# mkdocs documentation      → Документация MkDocs
-/site
-
-# mypy        → Статический анализатор
+# MyPy / Pyre / Pytype
 .mypy_cache/
 .dmypy.json
-dmypy.json
-
-# Pyre type checker      → Проверка типов Pyre
 .pyre/
-
-# pytype static type analyzer      → Анализатор pytype
 .pytype/
 
-# Cython debug symbols      → Отладочные символы Cython
+# Цель компиляции / отладки
 cython_debug/
 
+# Виртуальные окружения и расширения Python (C / DLL)
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+*.log
+*.so
+*.pyd
+*.dll
+
+# ===============================
+# 🧰 ИНСТРУМЕНТЫ / IDE
+# ===============================
+
+# VSCode
+.vscode/
+*.code-workspace
+.continue/
+
 # PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+.idea/
 
-# Abstra
-# Abstra is an AI-powered process automation framework.
-# Ignore directories containing user credentials, local state, and settings.
-# Learn more at https://abstra.io/docs
-.abstra/
+# Spyder / Rope
+.spyderproject
+.spyproject
+.ropeproject
 
-# Visual Studio Code
-#  Visual Studio Code specific template is maintained in a separate VisualStudioCode.gitignore 
-#  that can be found at https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
-#  and can be added to the global gitignore or merged into this file. However, if you prefer, 
-#  you could uncomment the following to ignore the entire vscode folder
-# .vscode/
+# Cursor AI Editor
+.cursorignore
+.cursorindexingignore
 
-# Ruff stuff:
+# Ruff
 .ruff_cache/
 
-# PyPI configuration file
-.pypirc
+# Abstra / Marimo
+.abstra/
+marimo/_static/
+marimo/_lsp/
+__marimo__/
 
-# Cursor       → AI-редактор
-#  Cursor is an AI-powered code editor. `.cursorignore` specifies files/directories to
-#  exclude from AI features like autocomplete and code analysis. Recommended for sensitive data
-#  refer to https://docs.cursor.com/context/ignore-files
-.cursorignore          # Файлы для игнорирования AI
-.cursorindexingignore  # Файлы для исключения из индексации
+# ===============================
+# 📑 ДОКУМЕНТЫ
+# ===============================
 
-# Marimo      → Интерактивные Python-приложения
-marimo/_static/        # Статические файлы
-marimo/_lsp/           # LSP-сервер
-__marimo__/            # Внутренние данные
+# Публичные
+docs/public/
+docs/roadmap.md
+docs/progress.md
 
-### 🔐 SATTVA AI DEV SECURE ZONE ###
+# Приватные
+docs/private/
+docs/research.md
+docs/generate.md
 
-# 🛡️ СЕКРЕТНЫЕ АЛГОРИТМЫ И ПАТЕНТЫ
-/private/              # Папка с уникальными разработками
-algorithms/            # Каталог алгоритмов
-*.secret               # Файлы с пометкой "секретно"
-secret_*.py            # Специальные скрипты
-patents/               # Каталог патентных материалов
-*.patent               # Патентные файлы
-rosptent_application.pdf  # Заявка в Роспатент
+# Автоматически собранные
+docs/_build/
 
-# 🔑 КЛЮЧИ ДОСТУПА И КОНФИГУРАЦИЯ 
-.env                   # Основные переменные окружения
-.env.*                 # Все вариации переменных
-.envrc                 # Конфиг direnv
-config.ini             # Файл конфигурации
-api_keys.json          # Файл API-ключей
-credentials/           # Учётные данные
-keys/                  # Каталог ключей
-*.key                  # Ключи доступа
-*.pem                  # Сертификаты
-*.cert                 # SSL-сертификаты
-*.jks                  # Java KeyStore
-*.keystore             # Хранилища ключей
+# ===============================
+# 🔐 SATTVA AI DEV SECURE ZONE
+# ===============================
+
+# 🛡️ Алгоритмы и патенты
+/private/
+algorithms/
+*.secret
+secret_*.py
+patents/
+*.patent
+rosptent_application.pdf
+
+# 🔑 Ключи и конфигурация
+.env
+.env.*
+*.env
+.envrc
+config.ini
 api_keys.json
+credentials/
+keys/
+*.key
+*.pem
+*.cert
+*.jks
+*.keystore
+config.local.yaml
+secrets/
+vault/
 
-# 🧩 ВИРТУАЛЬНЫЕ ОКРУЖЕНИЯ И КОМПИЛЯЦИЯ  → Environments 
-.venv                  # Виртуальное окружение
-env/                   # Альтернативное расположение
-venv/                  # Альтернативное расположение
-ENV/                   # Альтернативное расположение
-env.bak/               # Бэкапы окружений
-venv.bak/              # Бэкапы окружений
-*.dll                  # Динамические библиотеки (Windows)
-compiled/              # Папка для сборки
+# 🚨 Безопасность
+security_alerts.log
+license_checker/
+access_control/
+audit_trail/
+security/
 
-# 🚨 СИСТЕМЫ БЕЗОПАСНОСТИ
-security_alerts.log    # Лог безопасности
-license_checker/       # Проверка лицензий
-access_control/        # Контроль доступа
-audit_trail/           # Журнал аудита
-security/__init__.py   # Базовые функции защиты
-/private/              # Защита папки с алгоритмами
-*.pyd                  # Скомпилированные модули Windows
-__pycache__/private/   # Дополнительная защита кеша для приватных модулей
-dist/private/          # Защита дистрибутивов
+# 👤 Данные пользователей (GDPR/152-ФЗ)
+user_profiles/
+user_data/
+*.personal_data
+auth_tokens.db
+*.csv
+*.xlsx
+*.parquet
+calculations_database.db
+migrations/
 
-# 👤 ДАННЫЕ ПОЛЬЗОВАТЕЛЕЙ (GDPR/152-ФЗ)
-user_profiles/         # Профили пользователей
-user_data/             # Пользовательские данные
-*.personal_data        # Файлы с персональными данными
-auth_tokens.db         # Токены авторизации
-*.csv                  # Экспорт в CSV
-*.xlsx                 # Excel-файлы
-*.parquet              # Формат Parquet
-calculations_database.db  # База расчётов
-migrations/            # Миграции БД
-*.db-journal           # Журналы БД
-
-# 💾 РЕЗЕРВНЫЕ КОПИИ И АРХИВЫ
-*.bak                  # Резервные копии
-*.tmp                  # Временные файлы
-*.backup               # Бэкапы
-archive/               # Архивы
-temp_backups/          # Временные резервы
-
-# ⚙️ СЛУЖЕБНЫЕ ФАЙЛЫ РАЗРАБОТКИ
-*.code-workspace       # Рабочее пространство VSCode
-.vscode/launch.json    # Конфигурация запуска
-.vscode/settings.json  # Настройки VSCode
-.idea/workspace.xml    # Конфиг JetBrains IDE
-.idea/dataSources/     # Источники данных
-
-### 🔐 SATTVA AI DEV SECURE ZONE [КОНЕЦ] ###
-
-# АБСОЛЮТНО ВСЕГДА ИГНОРИРОВАТЬ
-.DS_Store               # Служебный файл macOS
-Thumbs.db               # Кеш эскизов Windows
-desktop.ini             # Настройки папок Windows
-
-# КРИТИЧНО ДЛЯ WINDOWS
-*.lnk
+# 💾 Резервные копии
+*.bak
 *.tmp
+*.backup
+archive/
+temp_backups/
+
+# ===============================
+# 🧪 ТЕСТЫ И ВРЕМЕННЫЕ ФАЙЛЫ
+# ===============================
+tests/__pycache__/
+tests/tmp/
+tests/output/
+test_env.py
+
+# ===============================
+# 💻 СИСТЕМНЫЕ ФАЙЛЫ
+# ===============================
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+desktop.ini
+*.lnk
