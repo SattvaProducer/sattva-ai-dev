@@ -1,3 +1,5 @@
 {
-    "deepseek.apikey": "sk-6efb68350856459da878f66d37530389"
+    "python.defaultInterpreterPath": "${workspaceFolder}/venvs/.venv310/Scripts/python.exe",
+    "python.venvPath": "${workspaceFolder}/venvs",
+    "python.terminal.activateEnvironment": true
 }

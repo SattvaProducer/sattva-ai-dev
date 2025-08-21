@@ -1,0 +1,24 @@
+# --- PyTorch с поддержкой CUDA 12.1 ---
+torch==2.5.1+cu121
+torchvision==0.20.1+cu121
+torchaudio==2.5.1+cu121
+# Устанавливаются с официального репозитория PyTorch
+
+# --- Наука и анализ ---
+numpy==2.1.2
+pandas==2.2.2
+scikit-learn==1.5.2
+scipy==1.14.1
+
+# --- Визуализация ---
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# --- NLP / AI ---
+transformers==4.44.2
+sentencepiece==0.2.0
+
+# --- Удобство ---
+tqdm==4.66.5
+python-dotenv==1.0.1
+jupyter==1.1.1
