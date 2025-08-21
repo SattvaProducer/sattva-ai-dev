@@ -52,8 +52,9 @@ ipython_config.py
 cython_debug/
 
 # Виртуальные окружения и расширения Python (C / DLL)
+venvs/
 .venv/
-venv/
+.venv310/
 env/
 ENV/
 env.bak/
